@@ -1,0 +1,15 @@
+- name: Configure Student Portal Server
+  hosts: web
+  become: yes
+
+  tasks:
+    - name: Install Docker
+      yum:
+        name: docker
+        state: present
+
+    - name: Start Docker
+      service:
+        name: docker
+        state: started
+        enabled: true
