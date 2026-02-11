@@ -1,14 +1,58 @@
-# Terraform
-.terraform/
-*.tfstate
-*.tfstate.backup
-
-# Keys
+# ========================
+# 🔐 SSH & Keys
+# ========================
 *.pem
+*.key
+*.pub
+id_rsa*
+id_ed25519*
+*-key
+*-key.pub
 
-# OS
+# ========================
+# 🌍 Environment & Secrets
+# ========================
+.env
+.env.*
+*.tfvars
+*.tfvars.json
+secrets.yml
+secrets.yaml
+
+# ========================
+# 🏗 Terraform
+# ========================
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# ========================
+# 🐳 Docker
+# ========================
+docker-compose.override.yml
+
+# ========================
+# 💻 OS Files
+# ========================
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# VS Code
+# ========================
+# 🧠 Editors / IDEs
+# ========================
 .vscode/
+.idea/
+*.swp
+*.swo
+
+# ========================
+# 📜 Logs
+# ========================
+*.log
